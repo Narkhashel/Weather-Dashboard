@@ -9,6 +9,10 @@ submitButton.addEventListener('click', function(event) {
 
     let cityNameText = document.querySelector('#search-input').value;
 
+    if (cityNameText === ''){
+        return;
+    }
+
     getWeatherInfo(cityNameText)
 })
 
