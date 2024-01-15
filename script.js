@@ -18,7 +18,7 @@ function getWeatherInfo (city) { //--------------------------------
     document.querySelector('#forecast').innerHTML = '';
     document.querySelector('#history').innerHTML = '';
 
-    let queryUrlLocation = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${keyAPI}`;
+    let queryUrlLocation = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${keyAPI}`;
 
     
 
@@ -40,7 +40,7 @@ function getWeatherInfo (city) { //--------------------------------
 
 function todayForcast (lat, lon) {
 
-    let queryUrlCurrentWeather = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${keyAPI}&units=metric`;
+    let queryUrlCurrentWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${keyAPI}&units=metric`;
 
     fetch(queryUrlCurrentWeather)
     .then(function (response){
