@@ -103,7 +103,7 @@ function fiveDayForecastRow (fiveDayData) {
         let weatherData = fiveDayData.list[i];
 
         let dayContainer = document.createElement('div');
-        dayContainer.classList.add('bg-primary-subtle', 'col-2', 'border', 'border-secondary-subtle'); 
+        dayContainer.classList.add('bg-primary-subtle', 'col-2', 'border', 'border-secondary-subtle', 'm-2'); 
         let forcastTime = dayjs.unix(weatherData.dt);
         let forcastDate = `(${dayjs(forcastTime).format('DD/MM/YYYY')})`;
         let weatherIcon = document.createElement('img');
